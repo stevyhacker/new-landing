@@ -20,10 +20,10 @@ function App() {
           </div>
           <p className="text-3xl text-purple-200 mb-12 font-light tracking-wide">Senior Software Engineer</p>
           <div className="flex justify-center gap-8 mb-12">
-            <a href="https://github.com" className="p-4 bg-white/10 rounded-2xl backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_4px_8px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_6px_12px_rgba(0,0,0,0.4)] transition-all hover:scale-110 hover:bg-white/20">
+            <a href="https://github.com/stevyhacker" className="p-4 bg-white/10 rounded-2xl backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_4px_8px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_6px_12px_rgba(0,0,0,0.4)] transition-all hover:scale-110 hover:bg-white/20">
               <Github size={28} className="text-purple-300" />
             </a>
-            <a href="https://linkedin.com" className="p-4 bg-white/10 rounded-2xl backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_4px_8px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_6px_12px_rgba(0,0,0,0.4)] transition-all hover:scale-110 hover:bg-white/20">
+            <a href="https://linkedin.com/in/stevan-bogosavljevic/" className="p-4 bg-white/10 rounded-2xl backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_4px_8px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_6px_12px_rgba(0,0,0,0.4)] transition-all hover:scale-110 hover:bg-white/20">
               <Linkedin size={28} className="text-purple-300" />
             </a>
             <a href="mailto:stevan.bogosavljevic@gmail.com" className="p-4 bg-white/10 rounded-2xl backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_4px_8px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.2),0_6px_12px_rgba(0,0,0,0.4)] transition-all hover:scale-110 hover:bg-white/20">
@@ -53,12 +53,7 @@ function App() {
               {
                 icon: <Code2 size={32} className="text-pink-400" />,
                 title: "Smart Contract Expert",
-                description: "2+ years of experience with Solidity, EVM, Hardhat, and Foundry"
-              },
-              {
-                icon: <Brain size={32} className="text-purple-400" />,
-                title: "Team Leader",
-                description: "Led mobile development teams and mentored Android developers"
+                description: "4+ years of experience with Solidity, EVM, Hardhat, and Foundry"
               },
               {
                 icon: <Wallet size={32} className="text-indigo-400" />,
@@ -69,7 +64,12 @@ function App() {
                 icon: <Database size={32} className="text-pink-400" />,
                 title: "Full Stack Developer",
                 description: "Proficient in React/Next.js and TypeScript"
-              }
+              },
+              {
+                icon: <Brain size={32} className="text-purple-400" />,
+                title: "Team Lead",
+                description: "Led mobile development teams and mentored Android developers"
+              },
             ].map((item, index) => (
               <div key={index} className="p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.1),0_4px_8px_rgba(0,0,0,0.3)] border border-white/10">
                 <div className="flex items-start gap-4">
@@ -91,7 +91,7 @@ function App() {
       <section className="py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/80 to-pink-900/80 backdrop-blur-xl"></div>
         <div className="max-w-6xl mx-auto px-4 relative z-10">
-          <h2 className="text-4xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">Featured Projects</h2>
+          <h2 className="text-4xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">Side Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div key={project.title} className="group relative">
@@ -104,7 +104,7 @@ function App() {
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-xl font-semibold text-purple-200">{project.title}</h3>
-                      <Trophy className="text-pink-400" size={24} />
+                      {/* <Trophy className="text-pink-400" size={24} /> */}
                     </div>
                     <p className="text-purple-300 mb-4">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-4">
@@ -129,13 +129,13 @@ function App() {
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">Let's Connect</h2>
           <p className="text-purple-200 mb-12 text-lg">
-            Currently open for new opportunities and interesting projects
+            Always open for new opportunities and interesting projects
           </p>
           <a
             href="mailto:stevan.bogosavljevic@gmail.com"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full font-semibold text-lg shadow-[0_4px_12px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.4)] transition-all hover:scale-105"
           >
-            Get in Touch
+            stevan.bogosavljevic@gmail.com
             <Mail size={24} className="ml-2" />
           </a>
         </div>
